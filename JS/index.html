@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>exe</title>
+  </head>
+  <body>
+    <div class="grp" style="display:flex">
+      <div id="div"></div>
+      <div id="div"></div>
+      <div id="div"></div>
+      <div id="div"></div>
+    </div>
+
+    <button type="button" name="button_suppr" onclick="div.remove()">Supprimer</button>
+
+    <script type="text/javascript">
+      var str1 = 'https://secure.static.tumblr.com/24d4dfbfa5b3fbd58479ab946c2b2dc7/dlnhnqs/0pcn57yzy/tumblr_static_tumblr_static_74h9asozl6gwgg0ookkc4gow4_640.jpg';
+      var str2 = 'https://secure.static.tumblr.com/c91ad911e05f7445614c0bbf8ddca0e3/8521foz/suOn6wfs5/tumblr_static_tumblr_m8ewr9oz8g1rdnk07o1_500.jpg';
+      var str3 = 'https://secure.static.tumblr.com/6242afa1fe801f54166d6743a4ebb5d3/w4tx5m3/K5lniopkv/tumblr_static_tumblr_static_ce97tpdl1n488484o8k4w000c_640.jpg';
+      var str4 = 'https://secure.static.tumblr.com/14ecbc3d9a9e02f1f842a3cc54eeb05e/ffzodqp/9WGn5ft99/tumblr_static_tumblr_static__640.jpg';
+      var tabImg = [str1, str2, str3, str4];
+      var div = document.getElementById('div');
+
+      for (var i = 0; i < tabImg.length; i++) {
+        div.innerHTML += '<img src=' + tabImg[i] + '>';
+        //tabImg[i] = document.implementation.createHTMLDocument(image);
+      }
+
+    </script>
+  </body>
+</html>
